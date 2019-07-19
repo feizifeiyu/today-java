@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 继承父工程 -->
+    <parent>
+        <groupId>com.feizifeiyu</groupId>
+        <artifactId>today-java</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.feizifeiyu</groupId>
+    <artifactId>logback</artifactId>
+    <version>1.0.0</version>
+
+    <name>logback</name>
+    <packaging>jar</packaging>
+    <description>我的LogBack日志</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+
+    <!-- logback相关依赖 -->
+    <dependencies>
+
+    </dependencies>
+
+    <!--
+        注意：多模块项目仅仅需要在启动类所在的模块添加打包插件即可！！
+        不要在父类添加打包插件，因为那样会导致全部子模块都使用spring-boot-maven-plugin的方式来打包（例如BOOT-INF/com/feizifeiyu/xx），
+        而logback模块引入某些模块 的jar 需要的是裸露的类文件，即目录格式为（/com/feizifeiyu/xx）。
+    -->
+    <!--多模块打包：只需在启动类所在模块的POM文件：指定打包插件 -->
+    <build>
+        <plugins>
+            <plugin>
+                <!--该插件主要用途：构建可执行的JAR -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

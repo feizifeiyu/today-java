@@ -1,0 +1,7 @@
+#应用名
+spring:
+  application:
+    name: log4j
+#应用端口
+server:
+  port: 7072

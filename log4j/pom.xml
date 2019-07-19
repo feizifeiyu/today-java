@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- 继承父工程 -->
+	<parent>
+		<groupId>com.feizifeiyu</groupId>
+		<artifactId>today-java</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<!-- 基本信息 -->
+	<groupId>com.feizifeiyu</groupId>
+	<artifactId>log4j</artifactId>
+	<version>1.0.0</version>
+
+	<name>log4j</name>
+	<packaging>jar</packaging>
+	<description>我的Log4J日志</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<!-- log4j相关依赖 -->
+	<dependencies>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
