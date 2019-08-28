@@ -26,8 +26,9 @@
 
     <!-- 模块部分: 声明子模块 -->
     <modules>
-        <module>logback</module>
-        <module>log4j</module>
+        <module>1.logback</module>
+        <module>2.log4j</module>
+        <module>flink</module>
     </modules>
 
     <!-- 依赖说明: 统一管理依赖的版本 -->
